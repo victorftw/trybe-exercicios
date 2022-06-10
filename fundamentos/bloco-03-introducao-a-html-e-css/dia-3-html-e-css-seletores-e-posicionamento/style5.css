@@ -1,0 +1,69 @@
+ol li {
+    background-color: yellow;
+}
+
+ol li:nth-of-type(2n) {
+    color: green;
+}
+
+ol li:nth-of-type(2n+1) {
+    text-transform: uppercase;
+}
+
+h1,
+h3 {
+    color: red;
+}
+
+h1 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.lg li:nth-of-type(-n+3) {
+    color: blue;
+}
+
+.lg li:nth-child(2) {
+    background-color: pink;
+}
+
+.lg li:nth-child(3) {
+    background-color: pink;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sites li:hover {
+    font-weight: bold;
+}
+
+.sites li:nth-child(1) a {
+    color: orange;
+}
+
+.sites li:nth-child(2) a {
+    color: green;
+}
+
+.sites li:nth-child(3) a {
+    color: black;
+}
+
+.sites li:nth-child(4) a {
+    color: yellow;
+}
+
+.sites li:nth-child(5) a {
+    color: limegreen;
+}
