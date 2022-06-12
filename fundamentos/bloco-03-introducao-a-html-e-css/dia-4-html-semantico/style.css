@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+  }
+
+  .first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    margin-left: 540px;
+  }
+
+  .second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    margin-left: 340px;
+    display: inline-block;
+  }
+
+  .third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    margin-left: 0;
+    display: inline-block;
+    position: absolute;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  #lugares {
+      text-align: center;
+  }
+
+  #lugares li {
+      display: inline;
+  }
+
