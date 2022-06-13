@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+}
+
+#navegacao {
+    margin-left: 30%;
+}
+
+#navegacao ul {
+    list-style: none;
+}
+
+#navegacao ul li {
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    margin-top: 10%;
+}
+
+#table-info {
+    border: 1px solid black;
+    margin-left: 8.6%;
+    display: inline-block;
+
+}
+
+#table-info tr:nth-of-type(1)  {
+    display: block;
+    margin-left: 10px;
+}
+
+#table-info th {
+    display: inline-block;
+    margin: 5px 7px 5px 30px;
+}
+
+#info {
+    display: block;
+    margin-left: 9%;
+}
+
+#info h4 {
+    margin-left: 25px;
+}
+
+#info h3 {
+    margin-left: 60px;
+}
+
+h2 {
+    text-align: center;
+}
+
