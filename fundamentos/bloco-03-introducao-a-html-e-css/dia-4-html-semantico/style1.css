@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(206, 204, 204);
+    background-color: rgb(165, 161, 161);
 }
 
 a {
@@ -13,11 +13,22 @@ a {
     color: black;
 }
 
+main {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 335px;
+    position: absolute;
+    margin-right: 335px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: rgb(206, 204, 204);
+}
+
 #navegacao {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(255, 255, 255);
     display: block;
     text-align: center;
-    position: sticky;
+    background-color: rgb(206, 204, 204);
 }
 
 #navegacao ul {
@@ -36,7 +47,8 @@ header {
 }
 
 #table-info {
-    border: 1px solid black;
+    border: 4px solid rgb(165, 161, 161);
+    margin-top: 10px;
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
@@ -44,6 +56,8 @@ header {
 
 #table-info tr:nth-of-type(1)  {
     display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #table-info th {
@@ -53,13 +67,22 @@ header {
 }
 
 #info p {
+    margin-top: 5px;
     font-weight: bold;
     font-style: italic;
 }
 
 #info {
-    border: 1px solid black;
+    border: 1px solid rgb(206, 204, 204);
+    border-radius: 30px;
+    background-color: rgb(206, 204, 204);
     display: inline-block;
+    text-align: center;
+    height: 400px;
+}
+
+#info h3 {
+    margin-bottom: 5px;
 }
 
 h2 {
@@ -68,12 +91,17 @@ h2 {
 }
 
 #barra {
-    margin-top: 5%;
-    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    position: fixed;
+    margin-top: 250px;
+    margin-left: 35px;
+    margin-right: 37px;
+    text-align: left;
 }
 
 #apresentacao {
     text-align: center;
+
 }
 
 #apresentacao article p {
@@ -122,6 +150,7 @@ h2 {
 }
 
 #quinto ul {
+    margin-top: 40px;
     list-style: none;
 }
 
@@ -132,6 +161,15 @@ h2 {
 }
 
 .artigos {
-    width: 50%;
+    margin-top: 60px;
+    width: 65%;
     display: inline-block;
+}
+
+.artigos h2, h3 {
+    margin-bottom: 40px;
+}
+
+.artigos p {
+    margin-top: 40px;
 }
