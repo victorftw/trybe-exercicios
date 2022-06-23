@@ -8,7 +8,7 @@
 // 7 - Atribuir o resultado à essa variável.
 // 8 - Criar um if com a condição da variável ser maior que 20;
 // 9 - Caso a variável obedeça a condição; Imprimir 'Valor maior que 20'
-// 10 - Caso não obedeça a condição; Imprimir Imprimir a mensagem "valor menor ou igual a 20";
+// 10 - Caso não obedeça a condição; Imprimir a mensagem "valor menor ou igual a 20";
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let sum = 0;
