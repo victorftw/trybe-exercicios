@@ -123,10 +123,11 @@
         addList.appendChild(lista);
       }
 
-      // 9 - 🚀 Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
-      const ultimoIndex = sessaoDireita.firstChild.lastChild;
-      ultimoIndex.previousSibling.remove();
-      ultimoIndex.remove();
+      // 9 - 🚀 Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+      for (let index = 0; index < 3; index += 1) {
+        const tagsH3 = document.createElement('h3');
+        mainContent.appendChild(tagsH3);
+      }
     </script>
   </body>
 </html>
