@@ -68,11 +68,18 @@
       tagMain.classList = 'main-content';
       corpo.appendChild(tagMain);
 
-      // 🚀 Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+      // 3 - 🚀 Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
       const tagSection = document.createElement('section');
       const mainContent = document.getElementsByClassName('main-content')[0];
       tagSection.classList = 'center-content';
       mainContent.appendChild(tagSection);
+
+      // 4 - 🚀 Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+      const tagP = document.createElement('p');
+      const sessao = document.getElementsByClassName('center-content')[0];
+      tagP.innerText =
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa massa ultricies mi quis hendrerit dolor magna eget.';
+      sessao.appendChild(tagP);
     </script>
   </body>
 </html>
