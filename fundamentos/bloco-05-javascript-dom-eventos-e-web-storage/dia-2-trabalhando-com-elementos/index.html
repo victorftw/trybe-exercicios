@@ -129,9 +129,14 @@
         mainContent.appendChild(tagsH3);
       }
 
-
       // 1 - 🚀 Adicione a classe title na tag h1 criada;
       tagH1.classList = 'title';
+
+      // 2 - 🚀 Adicione a classe description nas 3 tags h3 criadas;
+      const tagsH3 = document.getElementsByTagName('h3');
+      for (index of tagsH3) {
+        index.classList = 'description';
+      }
     </script>
   </body>
 </html>
