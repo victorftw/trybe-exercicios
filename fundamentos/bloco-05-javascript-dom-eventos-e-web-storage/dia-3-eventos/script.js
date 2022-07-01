@@ -214,3 +214,19 @@ function addTasks(string) {
 }
 
 addTasks('Ficar rico');
+
+//🚀 Exercício 8:
+// Implemente uma função que adicione uma legenda com cor para a tarefa.
+// * Essa função deverá receber como parâmetro uma string ('cor') e criar dinamicamente um elemento de tag `<div>` com a classe `task`.
+// O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
+
+function addSubtitle(color) {
+  const divSubtitle = document.createElement('div');
+  const divTask = document.getElementsByClassName('my-tasks')[0];
+  divSubtitle.classList = 'task';
+  divSubtitle.style.backgroundColor = color;
+  divTask.appendChild(divSubtitle);
+}
+
+addSubtitle('blue');
