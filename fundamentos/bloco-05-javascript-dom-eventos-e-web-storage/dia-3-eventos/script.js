@@ -27,6 +27,9 @@ let decemberDaysList = [
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
 ];
 
+let arrayHolidays = ['24', '25', '31'];
+
+let arrayFridays = ['4', '11', '18', '25'];
 // 🚀 Exercício 1:
 // Crie um calendário dinamicamente.
 // O array decemberDaysList contém os dois últimos dias de novembro e os dias do mês de dezembro. Sua função deve criar dinamicamente cada dia do calendário e os adicionar dentro da tag <ul>.
@@ -35,10 +38,6 @@ let decemberDaysList = [
 // Os dias devem estar contidos em uma tag <li>, e todos devem ter a classe day. Ex: <li class="day">3</li>
 // Os dias 24, 25 e 31 são feriados e, além da classe day, devem conter também a classe holiday. Ex: <li class="day holiday">24</li>
 // Os dias 4, 11, 18 e 25 são sextas-feiras. Eles devem conter a classe day e a classe friday. Ex: <li class="day friday">4</li>
-
-let arrayHolidays = ['24', '25', '31'];
-
-let arrayFridays = ['4', '11', '18', '25'];
 
 function addDays(array) {
   const sessaoDias = document.getElementById('days');
@@ -143,3 +142,38 @@ function addFridayButton(string) {
 }
 
 addFridayButton('sexta-feira');
+
+// 🚀 Exercício 5:
+// Implemente uma função que modifica o texto exibido nos dias que são Sexta-feira. Adicione ao botão "Sexta-feira" um evento de "click" e modifique o texto a ser exibido nos dias que são sextas-feiras.
+// 👀 É interessante que esse botão possua também a lógica inversa. Ao ser clicado novamente, ele retorna à configuração inicial exibindo os dias.
+
+const fridayButton = document.getElementById('btn-friday');
+let sextou = false;
+
+function sextouFunction() {
+  if (sextou === false) {
+    fridayText();
+    sextou = true;
+  } else {
+    fridayNumber(arrayFridays);
+    sextou = false;
+  }
+}
+
+function fridayText() {
+  const holidays = document.getElementsByClassName('friday');
+
+  for (let index = 0; index < holidays.length; index += 1) {
+    holidays[index].innerText = 'SEXTOU!';
+  }
+}
+
+function fridayNumber(array) {
+  const holidays = document.getElementsByClassName('friday');
+
+  for (let index = 0; index < holidays.length; index += 1) {
+    holidays[index].innerText = array[index];
+  }
+}
+
+fridayButton.addEventListener('click', sextouFunction);
