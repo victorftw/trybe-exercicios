@@ -81,12 +81,12 @@ addFridays(arrayFridays);
 // Adicione a este botão a ID "btn-holiday"
 // Adicione este botão como filho/filha da tag <div> com classe "buttons-container"
 
-function addHolidayButton(feriados) {
+function addHolidayButton(string) {
   const botoesContainer =
     document.getElementsByClassName('buttons-container')[0];
   const botaoFeriado = document.createElement('button');
   botaoFeriado.id = 'btn-holiday';
-  botaoFeriado.innerText = feriados.toUpperCase();
+  botaoFeriado.innerText = string.toUpperCase();
   botoesContainer.appendChild(botaoFeriado);
 }
 
@@ -126,3 +126,20 @@ function uncolorFriday() {
 }
 
 botaoFeriado.addEventListener('click', ligaDesligaBotao);
+
+// 🚀 Exercício 4:
+// Implemente uma função que crie dinamicamente um botão com o nome "Sexta-feira". Sua função deve receber como parâmetro a string "Sexta-feira".
+// Adicione a esse botão o ID "btn-friday";
+// Adicione esse botão como filho/filha da tag <div> com classe "buttons-container".
+
+function addFridayButton(string) {
+  const botoesContainer =
+    document.getElementsByClassName('buttons-container')[0];
+
+  let botaoFriday = document.createElement('button');
+  botaoFriday.id = 'btn-friday';
+  botaoFriday.innerText = string.toUpperCase();
+  botoesContainer.appendChild(botaoFriday);
+}
+
+addFridayButton('sexta-feira');
