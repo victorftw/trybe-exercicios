@@ -1,11 +1,11 @@
 const btnEnviar = document.querySelector('#btn-enviar');
 const inputNome = document.querySelector('#nome-completo');
 const inputEmail = document.querySelector('#email');
-const inputRequired = document.getElementById('direito-imagens');
+const inputRequired = document.getElementById('direito-imagens').value;
+const form = document.querySelector('form');
 
-btnEnviar.addEventListener('click', (event) => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
-
   if (
     inputNome.value.length < 10 ||
     inputNome.value.length > 50 ||
