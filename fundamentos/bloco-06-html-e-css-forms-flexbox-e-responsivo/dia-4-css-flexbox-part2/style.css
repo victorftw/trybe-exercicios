@@ -17,13 +17,13 @@ body {
 .logo-container {
   display: flex;
   justify-content: center;
-  width: 268px;
+  flex-basis: 268px;
   order: 1;
 }
 
 .menu-container {
   display: flex;
-  width: 500px;
+  flex-basis: 500px;
   order: 2;
   flex-grow: 1;
   align-self: center;
@@ -78,7 +78,9 @@ body {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  width: 350px;
+  flex-basis: 350px;
+  align-self: center;
+  flex-grow: 1;
 }
 
 .aside-container h3,
