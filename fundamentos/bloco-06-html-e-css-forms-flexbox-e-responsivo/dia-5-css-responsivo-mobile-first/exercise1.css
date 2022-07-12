@@ -4,7 +4,7 @@
  */
 html {
   box-sizing: border-box;
-  margin: 20px;
+  margin: 0 3%;
 }
 
 *,
@@ -15,26 +15,35 @@ html {
 
 body {
   font-size: 1.2em;
+  font-family: Helvetica;
 }
 
 article {
+  width: 90%;
 }
 
 h1 {
   font-size: 1.7em;
+  margin: 0.9em 0 0 0;
 }
 
 h2 {
+  font-size: 1.4em;
 }
 
 img {
   max-width: 100%;
+  border-radius: 10px;
 }
 
 main {
+  display: flex;
+  flex-flow: column wrap;
 }
 
 section {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 figure {
@@ -43,4 +52,32 @@ figure {
 
 figcaption {
   font-size: 0.8em;
+  text-align: center;
+}
+
+@media screen and (min-width: 794px) {
+  body {
+    background-color: rgb(195, 255, 250);
+    margin: 25px 6%;
+  }
+  figure {
+    width: 28%;
+    margin-right: 4.5%;
+  }
+  main {
+    flex-flow: row wrap;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  body {
+    background: rgba(0, 255, 0, 0.2);
+    margin: 25px 10%;
+    max-width: 1130px;
+  }
+
+  figure {
+    width: 30%;
+    margin-right: 2.5%;
+  }
 }
