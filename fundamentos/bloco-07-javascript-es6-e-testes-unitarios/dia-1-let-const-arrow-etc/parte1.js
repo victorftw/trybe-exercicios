@@ -10,3 +10,13 @@ const testingScope = (escopo) => {
 }
 
 testingScope((false));
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+const resultado = (a, b) => (a - b);
+
+const ordenaNumeros = (array) => {
+  let ordenados = array.sort(resultado)
+  console.log(`Os números ${ordenados} se encontram ordenados de forma crescente!`);
+}
+
+ordenaNumeros(oddsAndEvens);
