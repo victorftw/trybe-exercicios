@@ -10,3 +10,4 @@ function addNewKey(objeto, chave, valor) {
 
 addNewKey(pessoa, 'job', 'student')
 addNewKey(pessoa, 'city', 'Maringá-PR')
+
