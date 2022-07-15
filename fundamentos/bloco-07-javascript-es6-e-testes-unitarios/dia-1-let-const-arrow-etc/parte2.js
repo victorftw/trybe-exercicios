@@ -34,4 +34,10 @@ function substituiX(nome) {
   return novaFrase;
 }
 
-console.log(substituiX('victor'));
+function habilidades(funcao) {
+  const frase = funcao;
+  const skills = 'JavaScript, CSS, HTML';
+  return `${frase}\nMinhas três principais habilidades são: ${skills}`;
+}
+
+console.log(habilidades(substituiX('Victor')));
