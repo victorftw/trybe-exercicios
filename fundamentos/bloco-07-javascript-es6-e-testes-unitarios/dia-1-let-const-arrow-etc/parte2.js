@@ -20,3 +20,18 @@ function maiorPalavra(string) {
 }
 
 // console.log(maiorPalavra('Antônio foi no banheiro e não sabemos o que aconteceu naquela noite'));
+
+function substituiX(nome) {
+  const frase = 'Tryber x aqui!';
+  const verifica = frase.split(' ');
+  let novaFrase = '';
+  for (let index = 0; index < verifica.length; index += 1) {
+    if (verifica[index] === 'x') {
+      verifica[index] = nome;
+    }
+    novaFrase = verifica.join(' ');
+  }
+  return novaFrase;
+}
+
+console.log(substituiX('victor'));
