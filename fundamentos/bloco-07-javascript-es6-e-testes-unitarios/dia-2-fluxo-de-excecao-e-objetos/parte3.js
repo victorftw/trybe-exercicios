@@ -26,3 +26,6 @@ function allKeys(objeto) {
   return Object.keys(objeto)
 }
 
+function objLength(objeto) {
+  return Object.entries(objeto).length;
+}
