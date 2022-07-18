@@ -22,3 +22,7 @@ function addTurno(objeto, chave, valor) {
   objeto[chave] = valor;
 }
 
+function allKeys(objeto) {
+  return Object.keys(objeto)
+}
+
