@@ -51,3 +51,11 @@ function allStudents(objeto) {
 
 const getValueByNumber = (objeto, indice) => Object.values(objeto)[indice];
 
+function verifyPair(obj, chave, valor) {
+  const array = Object.entries(obj);
+  let result = false;
+  for (let index in array) {
+    if (array[index][0] === chave && array[index][1] === valor) result = true;
+  }
+  return result;
+}
