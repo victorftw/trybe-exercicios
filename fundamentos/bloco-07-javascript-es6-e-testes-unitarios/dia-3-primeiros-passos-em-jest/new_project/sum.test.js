@@ -13,3 +13,9 @@ describe('Testes da função sum', () => {
     expect(() => sum(4, '5')).toThrow('parameters must be numbers');
   });
 });
+
+describe('Testes da função myRemove', () => {
+  test('Verifica se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado', () => {
+    expect(myRemove([1, 2, 3, 4], 3)).toEqual([1, 2, 4]);
+  });
+});
