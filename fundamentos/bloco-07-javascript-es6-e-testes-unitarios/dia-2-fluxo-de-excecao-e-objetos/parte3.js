@@ -48,3 +48,6 @@ function allStudents(objeto) {
   }
   return alunos;
 }
+
+const getValueByNumber = (objeto, indice) => Object.values(objeto)[indice];
+
