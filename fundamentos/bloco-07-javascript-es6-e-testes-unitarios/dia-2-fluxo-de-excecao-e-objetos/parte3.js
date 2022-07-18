@@ -22,8 +22,10 @@ function addTurno(objeto, chave, valor) {
   objeto[chave] = valor;
 }
 
+addTurno(lesson2, 'turno', 'noite');
+
 function allKeys(objeto) {
-  return Object.keys(objeto)
+  return Object.keys(objeto);
 }
 
 function objLength(objeto) {
@@ -31,5 +33,10 @@ function objLength(objeto) {
 }
 
 function allValues(objeto) {
-  return Object.values(objeto)
+  return Object.values(objeto);
+}
+
+function newObject(objeto1, objeto2, objeto3) {
+  const allLessons = Object.assign({}, { objeto1, objeto2, objeto3 });
+  return allLessons;
 }
