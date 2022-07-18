@@ -29,3 +29,7 @@ function allKeys(objeto) {
 function objLength(objeto) {
   return Object.entries(objeto).length;
 }
+
+function allValues(objeto) {
+  return Object.values(objeto)
+}
