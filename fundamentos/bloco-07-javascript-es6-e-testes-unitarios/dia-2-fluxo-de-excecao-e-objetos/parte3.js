@@ -36,7 +36,15 @@ function allValues(objeto) {
   return Object.values(objeto);
 }
 
-function newObject(objeto1, objeto2, objeto3) {
-  const allLessons = Object.assign({}, { objeto1, objeto2, objeto3 });
-  return allLessons;
+const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
+
+function allStudents(objeto) {
+  let alunos = 0;
+
+  const array = Object.keys(objeto);
+
+  for (let index in array) {
+    alunos += objeto[array[index]]['numeroEstudantes'];
+  }
+  return alunos;
 }
