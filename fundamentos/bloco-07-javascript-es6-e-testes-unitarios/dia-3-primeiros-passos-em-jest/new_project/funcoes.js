@@ -65,4 +65,6 @@ function decode(string) {
   return TextoDecode;
 }
 
+console.log(decode('1 b c d 2 f g h 3 j k l m n 4 p q r s t 5 v w x y z'));
+
 module.exports = { sum, myRemove, myFizzBuzz, encode, decode };
