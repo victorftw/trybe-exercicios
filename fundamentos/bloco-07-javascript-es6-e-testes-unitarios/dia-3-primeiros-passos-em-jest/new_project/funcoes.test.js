@@ -36,4 +36,8 @@ describe('Testes da função myFizzBuzz', () => {
   test('Faça uma chamada com um número divisível por 3 e verifique se o retorno é o esperado', () => {
     expect(myFizzBuzz(9)).toBe('fizz');
   });
+
+  test('Faça uma chamada com um número divisível por 5 e verifique se o retorno é o esperado', () => {
+    expect(myFizzBuzz(25)).toBe('buzz');
+  });
 });
