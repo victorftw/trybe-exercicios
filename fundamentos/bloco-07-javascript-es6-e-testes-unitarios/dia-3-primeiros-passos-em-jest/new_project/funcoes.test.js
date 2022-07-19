@@ -1,4 +1,11 @@
-const { sum, myRemove, myFizzBuzz, encode, decode } = require('./funcoes');
+const {
+  sum,
+  myRemove,
+  myFizzBuzz,
+  encode,
+  decode,
+  techList,
+} = require('./funcoes');
 
 describe('Testes da função sum', () => {
   test('Verifica se sum(4, 5) retorna 9', () => {
@@ -73,5 +80,46 @@ describe('Testes das funções encode e decode', () => {
   test('Teste se a string que é retornada pelas funções têm o mesmo número de caracteres que a string passada como parâmetro.', () => {
     expect(encode('trybe').length).toEqual(5);
     expect(decode('tryb2').length).toEqual(5);
+  });
+});
+
+describe('Testa a função techList', () => {
+  test('Testa se a função techList é definida', () => {
+    expect(techList).toBeDefined();
+  });
+
+  test('Testa se techList é uma função', () => {
+    expect(typeof techList).toBe('function');
+  });
+
+  test('Lista com 5 tecnologias deve retornar uma lista de objetos ordenados', () => {
+    expect(
+      techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas')
+    ).toEqual([
+      {
+        tech: 'CSS',
+        name: 'Lucas',
+      },
+      {
+        tech: 'HTML',
+        name: 'Lucas',
+      },
+      {
+        tech: 'JavaScript',
+        name: 'Lucas',
+      },
+      {
+        tech: 'Jest',
+        name: 'Lucas',
+      },
+      {
+        tech: 'React',
+        name: 'Lucas',
+      },
+    ]);
+  });
+
+  test('Lista com 0 tecnologias deve retornar uma mensagem de erro "Vazio!"', () => {
+    expect(techList([], 'Lucas')).toBe('Vazio!');
   });
 });
