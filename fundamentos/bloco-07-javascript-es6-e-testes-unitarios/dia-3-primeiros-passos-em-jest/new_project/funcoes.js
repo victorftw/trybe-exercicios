@@ -80,4 +80,18 @@ function techList(array, name) {
   return obj;
 }
 
-module.exports = { sum, myRemove, myFizzBuzz, encode, decode, techList };
+function hydrate(texto) {
+  const somenteNumeros = texto.replace(/[^0-9]/g, '');
+  const arrayNumeros = somenteNumeros.split('');
+  let soma = 0;
+  for (let index of arrayNumeros) {
+    let num = Number(index);
+    soma += num;
+  }
+  if (soma === 1) {
+    return `${soma} copo de água`;
+  }
+  return `${soma} copos de água`;
+}
+
+module.exports = { sum, myRemove, myFizzBuzz, encode, decode, techList, hydrate };
