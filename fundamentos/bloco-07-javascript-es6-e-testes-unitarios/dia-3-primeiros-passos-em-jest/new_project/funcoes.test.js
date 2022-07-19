@@ -54,5 +54,10 @@ describe('Testes das funções encode e decode', () => {
   test('Teste se encode e decode são funções', () => {
     expect(typeof encode).toBe('function');
     expect(typeof decode).toBe('function');
-  })
-})
+  });
+
+  test('Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente;', () => {
+    expect(encode('a, e, i, o, u')).toBe('1, 2, 3, 4, 5');
+    expect(decode('1, 2, 3, 4, 5')).toBe('a, e, i, o, u');
+  });
+});
