@@ -62,7 +62,16 @@ describe('Testes das funções encode e decode', () => {
   });
 
   test('Teste se as demais letras/números não são convertidos para cada caso;', () => {
-    expect(encode('a b c d e f g h i j k l m n o p q r s t u v w x y z')).toBe('1 b c d 2 f g h 3 j k l m n 4 p q r s t 5 v w x y z');
-    expect(decode('1, 2, 3, 4, 5, 6, 7, 8, 9, 0')).toBe('a, e, i, o, u, 6, 7, 8, 9, 0');
+    expect(encode('a b c d e f g h i j k l m n o p q r s t u v w x y z')).toBe(
+      '1 b c d 2 f g h 3 j k l m n 4 p q r s t 5 v w x y z'
+    );
+    expect(decode('1, 2, 3, 4, 5, 6, 7, 8, 9, 0')).toBe(
+      'a, e, i, o, u, 6, 7, 8, 9, 0'
+    );
+  });
+
+  test('Teste se a string que é retornada pelas funções têm o mesmo número de caracteres que a string passada como parâmetro.', () => {
+    expect(encode('trybe').length).toEqual(5);
+    expect(decode('tryb2').length).toEqual(5);
   });
 });
