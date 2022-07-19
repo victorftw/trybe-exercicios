@@ -31,5 +31,9 @@ describe('Testes da função myRemove', () => {
 describe('Testes da função myFizzBuzz', () => {
   test('Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado', () => {
     expect(myFizzBuzz(15)).toBe('fizzbuzz');
-  })
-})
+  });
+
+  test('Faça uma chamada com um número divisível por 3 e verifique se o retorno é o esperado', () => {
+    expect(myFizzBuzz(9)).toBe('fizz');
+  });
+});
