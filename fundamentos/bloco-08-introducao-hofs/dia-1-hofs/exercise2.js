@@ -1,6 +1,6 @@
 const resultado = (num, callback) => {
   let numAleat = Math.floor(Math.random() * 5 + 1);
-  return verifica(num, numAleat);
+  return callback(num, numAleat);
 };
 
 const verifica = (numero, numAleat) =>
