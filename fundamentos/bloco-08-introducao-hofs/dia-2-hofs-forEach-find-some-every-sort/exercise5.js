@@ -61,7 +61,9 @@ const books = [
   },
 ];
 
-const booksOrderedByReleaseYearDesc = (array) => 
-  Object.values(array).sort((a, b) => b.releaseYear - a.releaseYear);
+const everyoneWasBornOnSecXX = (array) =>
+  Object.values(array).every(
+    (item) => item.birthYear >= 1901 && item.birthYear <= 2000
+  );
 
-console.log(booksOrderedByReleaseYearDesc(books));
+console.log(everyoneWasBornOnSecXX(books));

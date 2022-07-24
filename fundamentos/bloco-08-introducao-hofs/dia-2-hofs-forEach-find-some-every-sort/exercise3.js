@@ -61,7 +61,7 @@ const books = [
   },
 ];
 
-const getNamedBook = (array) =>
+const getNamedBook = (array) => 
   Object.values(array).find((item) => item.name.length === 26);
 
 console.log(getNamedBook(books));
