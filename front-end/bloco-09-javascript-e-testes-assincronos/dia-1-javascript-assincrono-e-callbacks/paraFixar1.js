@@ -1,14 +1,16 @@
-const userFullName = ({ firstName, lastName }) => `Hello! My name is ${firstName} ${lastName}`;
-const userNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
+const userFullName = ({ firstName, lastName }) =>
+  `Hello! My name is ${firstName} ${lastName}`;
+const userNationality = ({ firstName, nationality }) =>
+  `${firstName} is ${nationality}`;
 
 const getUser = (callback) => {
   const userToReturn = {
-    firstName: "Ivan",
-    lastName: "Ivanovich",
-    nationality: "Russian"
+    firstName: 'Ivan',
+    lastName: 'Ivanovich',
+    nationality: 'Russian',
   };
-  return callback(userToReturn)
+  return callback(userToReturn);
 };
 
-console.log(getUser(userFullName)); 
-console.log(getUser(userNationality)); 
+console.log(getUser(userFullName));
+console.log(getUser(userNationality));
