@@ -1,6 +1,8 @@
 // Exercicio 1
-const planetDistanceFromSun = ({ name, distanceFromSun: { value, measurementUnit } }) =>
-  `${name} está a ${value} ${measurementUnit} de distância do Sol`;
+const planetDistanceFromSun = ({
+  name,
+  distanceFromSun: { value, measurementUnit },
+}) => `${name} está a ${value} ${measurementUnit} de distância do Sol`;
 
 const MEASUREMENT_UNIT = 'quilômetros';
 
@@ -35,3 +37,18 @@ const jupiter = {
 // console.log(planetDistanceFromSun(mars)); // A
 // setTimeout(() => console.log(planetDistanceFromSun(venus)), 3000); // B
 // setTimeout(() => console.log(planetDistanceFromSun(jupiter)), 2000); // C
+
+//Exercicio 3
+
+const getPlanet = () => {
+  const mars = {
+    name: 'Mars',
+    distanceFromSun: {
+      value: 227900000,
+      measurementUnit: 'kilometers',
+    },
+  };
+  setTimeout(() => console.log('Returned planet: ', mars), 4000);
+};
+
+// getPlanet();
