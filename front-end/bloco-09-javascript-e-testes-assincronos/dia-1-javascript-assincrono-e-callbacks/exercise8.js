@@ -39,4 +39,4 @@ const handlePokemonSearch = (error, message) => {
   return console.log(message);
 };
 
-getPokemonDetails('Pikachu', handlePokemonSearch);
+module.exports = { getPokemonDetails, handlePokemonSearch, pokemons };
