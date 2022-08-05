@@ -134,6 +134,6 @@ const sendMarsTemperature = (onSuccess, callback) => {
   }, messageDelay());
 };
 
-sendMarsTemperature(temperatureInFahrenheit, handleError);
+// sendMarsTemperature(temperatureInFahrenheit, handleError);
 
-sendMarsTemperature(greet, handleError);
+// sendMarsTemperature(greet, handleError);
