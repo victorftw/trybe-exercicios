@@ -55,20 +55,50 @@ const getPlanet = () => {
 
 // Exercicio 4
 
-const messageDelay = () => Math.floor(Math.random() * 5000);
+// const messageDelay = () => Math.floor(Math.random() * 5000);
 
-const getMarsTemperature = () => {
-  const maxTemperature = 58;
-  return Math.floor(Math.random() * maxTemperature);
-};
+// const getMarsTemperature = () => {
+//   const maxTemperature = 58;
+//   return Math.floor(Math.random() * maxTemperature);
+// };
 
-const sendMarsTemperature = () =>
-  setTimeout(
-    () =>
-      console.log(
-        `A temperatura em Marte é: ${getMarsTemperature()} graus celsius`
-      ),
-    5000
-  );
+// const sendMarsTemperature = () =>
+//   setTimeout(
+//     () =>
+//       console.log(
+//         `A temperatura em Marte é: ${getMarsTemperature()} graus celsius`
+//       ),
+//       messageDelay()
+//   );
 
 // sendMarsTemperature();
+
+// Exercicio 5
+
+// const messageDelay = () => Math.floor(Math.random() * 5000);
+
+// const getMarsTemperature = () => {
+//   const maxTemperature = 58;
+//   return Math.floor(Math.random() * maxTemperature);
+// };
+
+// const toFahrenheit = (degreeCelsius) => degreeCelsius * (9 / 5) + 32;
+
+// const temperatureInFahrenheit = (temperature) =>
+//   console.log(`Atualmente está ${toFahrenheit(temperature)}ºF em Marte`);
+
+// const greet = (temperature) =>
+//   console.log(
+//     `Olá! Curiosity aqui. Nesse momento está ${temperature}ºC em Marte`
+//   );
+
+// const sendMarsTemperature = (callback) =>
+//   setTimeout(() => {
+//     if (callback === temperatureInFahrenheit)
+//       return temperatureInFahrenheit(getMarsTemperature());
+//     return greet(getMarsTemperature());
+//   }, messageDelay());
+
+// sendMarsTemperature(temperatureInFahrenheit);
+
+// sendMarsTemperature(greet);
